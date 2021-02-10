@@ -64,37 +64,96 @@ html {
 
 body {
   margin: 0 auto;
+  width: 144rem;
   font-family: 'Open Sans', sans-serif;
 }
 
 .header {
-  background-color: greenyellow;
-  height: 30rem;
+  font-size: 2rem;
+  background-color: #333;
 }
 
 .header__inner {
   max-width: 144rem;
   margin: 0 auto;
-  border: 3px white solid;
-  height: 20rem;
 }
 
 .header__inner__content {
   margin: 0 auto;
-  color: white;
   max-width: 120rem;
-  border: white dashed 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__inner__content .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__inner__content .logo__svg {
+  margin-right: 1.5rem;
+}
+
+.header__inner__content .logo__text {
+  font-size: 3.2rem;
+  color: #F7F7F7;
+  text-transform: uppercase;
+}
+
+.header__inner__content .nav__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__inner__content .nav__links__item .link {
+  text-decoration: none;
+  color: #F7F7F7;
+}
+
+.header__inner__content .nav__links li + li {
+  margin-left: 6rem;
 }
 
 .main {
-  color: white;
+  color: blue;
   height: 136.8rem;
-  background-color: aqua;
 }
 
 .main .survival {
   margin: 0 auto;
-  border: 3px white solid;
   background-color: #02160b;
 }
 
@@ -102,13 +161,15 @@ body {
   margin: 0 auto;
   height: 77.9rem;
   max-width: 144rem;
-  border: 3px white dashed;
+  background-image: url("../../assets/images/survival/bg_Rectangle.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .main .survival__inner__content {
   margin: 0 auto;
   max-width: 120rem;
-  border: 3px white dashed;
 }
 
 .footer {

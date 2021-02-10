@@ -1,16 +1,40 @@
 .header {
-  background-color: greenyellow;
-  height: 30rem;
+  font-size: 2rem;
+  background-color: #333;
+  
   &__inner {
     max-width: 144rem;
     margin: 0 auto;
-    border: 3px white solid;
-    height: 20rem;
     &__content {
       margin: 0 auto;
-      color: white;
       max-width: 120rem;
-      border: white dashed 2px
+      @include df_row_sb_c;
+      .logo {
+        @include df_row_sb_c;
+        &__svg {
+          margin-right: 1.5rem;
+        }
+        &__text {
+          font-size: 3.2rem;
+          color: $font-light;
+          text-transform: uppercase;
+        }
+      }
+      .nav {
+        &__links {
+          @include df_row_sb_c;
+          &__item {
+            .link {
+              text-decoration: none;
+              color: $font-light;
+            }
+          }
+          li + li {
+            margin-left: 6rem;
+          }
+        }
+
+      }
     }
   }
 }

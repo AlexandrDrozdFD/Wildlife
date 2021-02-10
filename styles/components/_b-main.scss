@@ -1,20 +1,22 @@
 .main {
-  color: white;
+  color: blue;
   height: 136.8rem;
-  background-color: aqua;
+ 
   .survival {
     margin: 0 auto;
-    border: 3px white solid;
     background-color: #02160b;
+    
     &__inner {
       margin: 0 auto;
       height: 77.9rem;
       max-width: 144rem;
-      border: 3px white dashed;
+      background-image: url('../../assets/images/survival/bg_Rectangle.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
       &__content {
         margin: 0 auto;
         max-width: 120rem;
-        border: 3px white dashed;
       }
     }
   }
