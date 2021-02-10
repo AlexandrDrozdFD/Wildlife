@@ -1,0 +1,16 @@
+.footer {
+  color: white;
+  background-color: #181617;
+  &__inner {
+    max-width: 144rem;
+    height: 35.9rem;
+    margin: 0 auto;
+    border: 3px white solid;
+    &__content {
+      margin: 0 auto;
+      color: white;
+      max-width: 120rem;
+      border: white dashed 2px
+    }
+  }
+}

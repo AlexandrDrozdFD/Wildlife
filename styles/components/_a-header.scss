@@ -1,0 +1,16 @@
+.header {
+  background-color: greenyellow;
+  height: 30rem;
+  &__inner {
+    max-width: 144rem;
+    margin: 0 auto;
+    border: 3px white solid;
+    height: 20rem;
+    &__content {
+      margin: 0 auto;
+      color: white;
+      max-width: 120rem;
+      border: white dashed 2px
+    }
+  }
+}
