@@ -1,7 +1,6 @@
 .header {
-  font-size: 2rem;
-  background-color: #333;
-  
+  padding: 2rem 0;
+  margin-bottom: -10.1rem;
   &__inner {
     max-width: 144rem;
     margin: 0 auto;
@@ -16,6 +15,7 @@
         }
         &__text {
           font-size: 3.2rem;
+          line-height: 6rem;
           color: $font-light;
           text-transform: uppercase;
         }
@@ -25,8 +25,20 @@
           @include df_row_sb_c;
           &__item {
             .link {
+              font-size: 2.4rem;
+              line-height: 6rem;
               text-decoration: none;
               color: $font-light;
+            }
+            .link .search {
+              vertical-align: middle;
+            }
+            .link.sign-in {
+              font-family: 'Roboto', sans-serif;
+              padding: 0.9rem 2.3rem;
+              line-height: 2.7rem;
+              border: 0.2rem solid $orange-main;
+              border-radius: 0.5rem;
             }
           }
           li + li {

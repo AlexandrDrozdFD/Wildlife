@@ -69,8 +69,8 @@ body {
 }
 
 .header {
-  font-size: 2rem;
-  background-color: #333;
+  padding: 2rem 0;
+  margin-bottom: -10.1rem;
 }
 
 .header__inner {
@@ -118,6 +118,7 @@ body {
 
 .header__inner__content .logo__text {
   font-size: 3.2rem;
+  line-height: 6rem;
   color: #F7F7F7;
   text-transform: uppercase;
 }
@@ -139,17 +140,26 @@ body {
 }
 
 .header__inner__content .nav__links__item .link {
+  font-size: 2.4rem;
+  line-height: 6rem;
   text-decoration: none;
   color: #F7F7F7;
 }
 
-.header__inner__content .nav__links li + li {
-  margin-left: 6rem;
+.header__inner__content .nav__links__item .link .search {
+  vertical-align: middle;
 }
 
-.main {
-  color: blue;
-  height: 136.8rem;
+.header__inner__content .nav__links__item .link.sign-in {
+  font-family: 'Roboto', sans-serif;
+  padding: 0.9rem 2.3rem;
+  line-height: 2.7rem;
+  border: 0.2rem solid #CD6326;
+  border-radius: 0.5rem;
+}
+
+.header__inner__content .nav__links li + li {
+  margin-left: 6rem;
 }
 
 .main .survival {
@@ -159,7 +169,7 @@ body {
 
 .main .survival__inner {
   margin: 0 auto;
-  height: 77.9rem;
+  padding-bottom: 24rem;
   max-width: 144rem;
   background-image: url("../../assets/images/survival/bg_Rectangle.png");
   background-repeat: no-repeat;
@@ -170,6 +180,41 @@ body {
 .main .survival__inner__content {
   margin: 0 auto;
   max-width: 120rem;
+}
+
+.main .survival__inner__content__article {
+  padding-top: 20rem;
+}
+
+.main .survival__inner__content__article__h1 {
+  color: #CD6326;
+  font-size: 4.8rem;
+  line-height: 7.2rem;
+  letter-spacing: 0.2rem;
+}
+
+.main .survival__inner__content__article__text {
+  margin-top: 5.1rem;
+  max-width: 27.4rem;
+  color: #F7F7F7;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+}
+
+.main .survival__inner__content__article__btn {
+  padding: 1.6rem 4.3rem 1.7rem 4.3rem;
+  margin-top: 4.9rem;
+  outline: none;
+  border: none;
+  background-color: #CD6326;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.main .survival__inner__content__article__btn .btn-text {
+  color: #F7F7F7;
+  font-size: 2.3rem;
+  line-height: 2.7rem;
 }
 
 .footer {
