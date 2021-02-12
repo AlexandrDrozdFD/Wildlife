@@ -6,3 +6,4 @@
 4. Deadline: 15.03.2021
 5. **score** *(self-test)*
 6. Youtube link (only for cross-check tasks) *(self-estimation)*
+7. During development all **commits** were creating in **master** branch

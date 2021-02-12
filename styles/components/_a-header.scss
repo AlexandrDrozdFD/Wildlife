@@ -30,6 +30,7 @@
               text-decoration: none;
               color: $font-light;
             }
+            
             .link .search {
               vertical-align: middle;
             }
@@ -39,6 +40,13 @@
               line-height: 2.7rem;
               border: 0.2rem solid $orange-main;
               border-radius: 0.5rem;
+            }
+            .link.sign-in:hover {
+              background-color: $orange-main;
+            }
+            .link.sign-in:active {
+              background-color: $orange-dark;
+              border: 0.2rem solid $orange-dark;
             }
           }
           li + li {

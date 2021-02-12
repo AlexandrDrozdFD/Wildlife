@@ -20,8 +20,13 @@
   justify-content: space-between;
   align-items: center;
 }
-@mixin df_column_c_c {
+@mixin df_row_sb {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@mixin df_column_c_c {
+  display: flex;  
   flex-direction: column;
   justify-content: center;
   align-items: center;

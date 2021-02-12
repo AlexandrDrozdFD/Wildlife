@@ -2,7 +2,6 @@
   .survival {
     margin: 0 auto;
     background-color: #02160b;
-    
     &__inner {
       margin: 0 auto;
       padding-bottom: 24rem;
@@ -42,6 +41,59 @@
               font-size: 2.3rem;
               line-height: 2.7rem;
             }
+          }
+          &__btn:hover {
+            background-color: $orange-light;
+            transition: 0.1s;
+          }
+          &__btn:active {
+            background-color: $orange-dark;
+          }
+        }
+      }
+    }
+  }
+  .latest-articles {
+    background-color: #cccccc;
+    &__inner {
+      margin: 0 auto;
+      max-width: 144rem;
+      &__content {
+        margin: 0 auto;
+        max-width: 120rem;
+        &__caption_h2 {
+          color: $font-dark;
+          font-size: 4.8rem;
+          line-height: 7.2rem;
+        }
+        &__caption_sh2 {
+          color: $font-grey;
+          font-size: 2.4rem;
+          line-height: 3.6rem;
+        }
+        .slider {
+          @include df_row_sb_c;
+          width: 100%;
+          .btn-left {
+            color: red
+          }
+          .slides {
+            @include df_row_sb;
+            width: 100%;
+            border: 4px solid yellow;
+            overflow: hidden;
+            .slide {
+              @include df_row_c_c;
+              border: 4px solid green;
+              height: 10rem;
+              width: calc(100% / 3);
+              flex-shrink: 0;
+              transition-property: transform;
+              transition-duration: 400ms;
+            }
+          }
+          .btn-right {
+            color: blue
           }
         }
       }
