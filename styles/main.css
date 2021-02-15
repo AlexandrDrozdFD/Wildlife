@@ -295,7 +295,6 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  border: 4px solid yellow;
   overflow: hidden;
 }
 
@@ -313,7 +312,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 4px solid green;
+  border: 3rem solid transparent;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 10rem;
   width: calc(100% / 3);
   -ms-flex-negative: 0;
@@ -324,6 +326,17 @@ body {
   transition-property: transform, -webkit-transform;
   -webkit-transition-duration: 400ms;
           transition-duration: 400ms;
+}
+
+.main .latest-articles__inner__content .slider .slides .slide__inner__caption {
+  font-size: 2.2rem;
+  line-height: 3.6rem;
+  color: #F7F7F7;
+  text-transform: capitalize;
+}
+
+.main .latest-articles__inner__content .slider .slides .slide__inner__text {
+  color: #F7F7F7;
 }
 
 .main .latest-articles__inner__content .slider .btn-right {

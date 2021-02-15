@@ -80,16 +80,32 @@
           .slides {
             @include df_row_sb;
             width: 100%;
-            border: 4px solid yellow;
+            // border: 4px solid yellow;
             overflow: hidden;
             .slide {
               @include df_row_c_c;
-              border: 4px solid green;
+              border: 3rem solid transparent;
+              background-position: center;
+              background-size: cover;
+              background-repeat: no-repeat;
               height: 10rem;
               width: calc(100% / 3);
               flex-shrink: 0;
               transition-property: transform;
               transition-duration: 400ms;
+              &__inner {
+
+                &__caption {
+                  font-size: 2.2rem;
+                  line-height: 3.6rem;
+                  color: $font-light;
+                  text-transform: capitalize;
+                }
+                &__text {
+                  color: $font-light;
+  
+                }
+              }
             }
           }
           .btn-right {
