@@ -89,7 +89,6 @@
                 fill: black;
               }
             }
-            
           }
           .slides {
             @include df_row_sb;
@@ -127,7 +126,6 @@
             }
           }
           .btn-right {
-            color: blue;
             margin-left: 3rem;
           }
           .btn-right:hover {
@@ -138,7 +136,6 @@
                 fill: black;
               }
             }
-            
           }
         }
       }

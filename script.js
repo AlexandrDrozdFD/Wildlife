@@ -2,7 +2,6 @@ const slidesContainer = document.querySelector('.slides');
 const btnRight = document.querySelector('.btn-right');
 const btnLeft = document.querySelector('.btn-left');
 
-
 let slides = [];
 let currentPosition = 0;
 
@@ -41,6 +40,7 @@ const DATA = [
 
 const createSlide = (parent, content, data, index) => {
   const el = document.createElement('div');
+
   el.className = 'slide';
   el.style.backgroundImage = `url(${data[index].image})`;
   el.innerHTML = content;
@@ -49,14 +49,13 @@ const createSlide = (parent, content, data, index) => {
 }
 
 const createHTML = (data, index) => {
-
   return (
     ` <div class="slide__inner">
         <h4 class="slide__inner__caption">${data[index].name}</h4>
         <p class="slide__inner__text">${data[index].text}</p>
       </div> 
     `
-  )
+  );
 } 
 
 
@@ -67,6 +66,7 @@ for (let i = 0; i < 6; i++) {
 btnLeft.addEventListener('click', () => {
   setPosition(currentPosition + 100);
 });
+
 btnRight.addEventListener('click', () => {
   setPosition(currentPosition - 100);
 });
@@ -82,5 +82,5 @@ const setPosition = (position) => {
   slides.forEach((slide) => {
     slide.style.transform = `translateX(${currentPosition}%)`;
   });
-}
+};
 
