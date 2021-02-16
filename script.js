@@ -58,7 +58,6 @@ const createHTML = (data, index) => {
   );
 } 
 
-
 for (let i = 0; i < 6; i++) {
   slides.push(createSlide(slidesContainer, createHTML(DATA, i), DATA, i));
 }
