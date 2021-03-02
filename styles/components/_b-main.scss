@@ -93,7 +93,6 @@
           .slides {
             @include df_row_sb;
             width: 100%;
-            // border: 4px solid yellow;
             overflow: hidden;
             .slide {
               @include df_row_c_c;
@@ -151,7 +150,6 @@
         margin: 0 auto;
         padding-top: 24rem;
         padding-bottom: 24rem;
-
         @include df_column_c_c;
         .caption {
           margin-bottom: 6rem;
@@ -161,6 +159,7 @@
         }
         .form {
           font-size: 0;
+          display: flex;
           .email {
             padding: 1.6rem 1.7rem;
             height: 6rem;
@@ -184,7 +183,15 @@
             background-color: $orange-main;
             border-radius: 0 0.5rem 0.5rem 0;
             color: $font-light;
-          
+          }
+          .btn-send:hover {
+            background-color: $orange-light;
+            border: 0.1rem solid $orange-light;
+            transition: 0.1s;
+          }
+          .btn-send:active {
+            background-color: $orange-dark;
+            border: 0.1rem solid $orange-dark;
           }
         }
       }

@@ -1,16 +1,78 @@
 .footer {
-  color: white;
   background-color: #181617;
   &__inner {
     max-width: 144rem;
-    height: 35.9rem;
     margin: 0 auto;
-    border: 3px white solid;
+    padding: 15rem 0;
+    height: 36rem;
+    background-image: url('../../assets/images/footer/footer_bg.jpg');
+    @include bg_image_props;
     &__content {
       margin: 0 auto;
-      color: white;
       max-width: 120rem;
-      border: white dashed 2px
+      @include df_row_sb_c;
+      .footer__logo {
+        display: flex;
+        &__svg {
+          margin-right: 1.5rem;
+          width: 7rem;
+          height: 6rem;
+          background-image: url('../../assets/images/header/horns.svg');
+          @include bg_image_props;
+        }
+        &__text {
+          @include logo__text;
+        }
+      }
+      .footer__nav {
+        @include df_row_sb_c;
+        &__list {
+          @include df_row_sb_c;
+          li {
+            cursor: pointer;
+          }
+          li + li {
+            margin-left: 8.9rem;
+          }
+          &__item {
+            color: $font-light;
+            font-size: 2.3rem;
+            line-height: 6rem;
+          }
+        }
+        &__list_icons {
+          margin-left: 12.3rem;
+          @include df_row_sb_c;
+          li {
+            cursor: pointer;
+            width: 4rem;
+            height: 4rem;
+          }
+          li:hover {
+            box-shadow: 0.05rem 0.05rem 0.5rem 0.1rem $orange-light;
+            border-radius: 50%;
+          }
+          li + li {
+            margin-left: 2.7rem;
+          }
+          &__facebook {
+            background-image: url('../../assets/images/footer/facebook.svg');
+            @include bg_image_props;
+          }
+          &__insta {
+            background-image: url('../../assets/images/footer/instagram.svg');
+            @include bg_image_props;
+          }
+          &__pinterest {
+            background-image: url('../../assets/images/footer/pinterest.svg');
+            @include bg_image_props;
+          }
+          &__twitter {
+            background-image: url('../../assets/images/footer/twitter.svg');
+            @include bg_image_props;
+          }
+        }
+      }
     }
   }
 }

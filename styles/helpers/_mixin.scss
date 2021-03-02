@@ -26,7 +26,7 @@
   justify-content: space-between;
 }
 @mixin df_column_c_c {
-  display: flex;  
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -48,4 +48,16 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+}
+@mixin logo__text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3.2rem;
+  line-height: 6rem;
+  color: $font-light;
+  text-transform: uppercase;
+}
+@mixin bg_image_props {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }

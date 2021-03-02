@@ -1,59 +1,57 @@
 .header {
-  padding: 2rem 0;
-  margin-bottom: -10.1rem;
-  &__inner {
-    max-width: 144rem;
-    margin: 0 auto;
-    &__content {
-      margin: 0 auto;
-      max-width: 120rem;
+  margin: auto;
+  position: absolute;
+  top: 2rem;
+  right: 0;
+  left: 0;
+  max-width: 120rem;
+  @include df_row_sb_c;
+  .logo {
+    @include df_row_sb_c;
+    &__svg {
+      margin-right: 1.5rem;
+      width: 7rem;
+      height: 6rem;
+      background-image: url('../../assets/images/header/horns.svg');
+      @include bg_image_props;
+    }
+    &__text {
+      @include logo__text;
+    }
+  }
+  .nav {
+    &__links {
       @include df_row_sb_c;
-      .logo {
-        @include df_row_sb_c;
-        &__svg {
-          margin-right: 1.5rem;
-        }
-        &__text {
-          font-size: 3.2rem;
+      &__item {
+        .link {
+          font-size: 2.3rem;
           line-height: 6rem;
+          text-decoration: none;
           color: $font-light;
-          text-transform: uppercase;
+        }
+        .link .search {
+          width: 2.3rem;
+          height: 2.3rem;
+          background-image: url('../../assets/images/header/search.svg');
+          @include bg_image_props;
+        }
+        .link.sign-in {
+          font-family: 'Roboto', sans-serif;
+          padding: 0.9rem 2.3rem;
+          line-height: 2.7rem;
+          border: 0.2rem solid $orange-main;
+          border-radius: 0.5rem;
+        }
+        .link.sign-in:hover {
+          background-color: $orange-main;
+        }
+        .link.sign-in:active {
+          background-color: $orange-dark;
+          border: 0.2rem solid $orange-dark;
         }
       }
-      .nav {
-        &__links {
-          @include df_row_sb_c;
-          &__item {
-            .link {
-              font-size: 2.4rem;
-              line-height: 6rem;
-              text-decoration: none;
-              color: $font-light;
-            }
-            
-            .link .search {
-              vertical-align: middle;
-            }
-            .link.sign-in {
-              font-family: 'Roboto', sans-serif;
-              padding: 0.9rem 2.3rem;
-              line-height: 2.7rem;
-              border: 0.2rem solid $orange-main;
-              border-radius: 0.5rem;
-            }
-            .link.sign-in:hover {
-              background-color: $orange-main;
-            }
-            .link.sign-in:active {
-              background-color: $orange-dark;
-              border: 0.2rem solid $orange-dark;
-            }
-          }
-          li + li {
-            margin-left: 6rem;
-          }
-        }
-
+      li + li {
+        margin-left: 6.6rem;
       }
     }
   }
