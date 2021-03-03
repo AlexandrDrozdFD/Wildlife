@@ -13,5 +13,5 @@
   5.5. Блок Footer +10; 
 6. Youtube link (only for cross-check tasks) *(self-estimation)*
 7. During development all **commits** were creating in **master** branch \
-![](https://github.com/AlexandrDrozdFD/wildlife/commits/master)
+https://github.com/AlexandrDrozdFD/wildlife/commits/master
 8. Screen of submit
