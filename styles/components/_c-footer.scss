@@ -54,10 +54,6 @@
             width: 4rem;
             height: 4rem;
           }
-          li:hover {
-            box-shadow: 0.05rem 0.05rem 0.5rem 0.1rem $orange-light;
-            border-radius: 50%;
-          }
           li + li {
             margin-left: 2.7rem;
           }
@@ -66,6 +62,10 @@
               @include social-icons;
               background-image: url('../../assets/images/footer/facebook.svg');
               @include bg_image_props;
+              &:hover {
+                transition: .2s;
+                background-image: url('../../assets/images/footer/facebook_hover.svg');
+              }
             }
           }
           &__insta {
@@ -73,6 +73,10 @@
               @include social-icons;
               background-image: url('../../assets/images/footer/instagram.svg');
               @include bg_image_props;
+              &:hover {
+                transition: .2s;
+                background-image: url('../../assets/images/footer/instagram_hover.svg');
+              }
             }
           }
           &__pinterest {
@@ -80,13 +84,22 @@
               @include social-icons;
               background-image: url('../../assets/images/footer/pinterest.svg');
               @include bg_image_props;
+              &:hover {
+                transition: .2s;
+                background-image: url('../../assets/images/footer/pinterest_hover.svg');
+              }
             }
           }
-          &__twitter {
+          &__youtube {
             &__link {
               @include social-icons;
-              background-image: url('../../assets/images/footer/twitter.svg');
+              width: 6rem;
+              background-image: url('../../assets/images/footer/youtube.svg');
               @include bg_image_props;
+              &:hover {
+                transition: .2s;
+                background-image: url('../../assets/images/footer/youtube_hover.svg');
+              }
             }
           }
         }
