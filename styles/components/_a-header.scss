@@ -29,6 +29,9 @@
           text-decoration: none;
           color: $font-light;
         }
+        .link:hover {
+          text-decoration: underline;
+        }
         .link .search {
           width: 2.3rem;
           height: 2.3rem;
@@ -43,6 +46,7 @@
           border-radius: 0.5rem;
         }
         .link.sign-in:hover {
+          text-decoration: none;
           background-color: $orange-main;
         }
         .link.sign-in:active {

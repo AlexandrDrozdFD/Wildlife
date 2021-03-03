@@ -65,7 +65,6 @@ html {
 body {
   margin: 0 auto;
   position: relative;
-  width: 144rem;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -148,6 +147,10 @@ body {
   color: #F7F7F7;
 }
 
+.header .nav__links__item .link:hover {
+  text-decoration: underline;
+}
+
 .header .nav__links__item .link .search {
   width: 2.3rem;
   height: 2.3rem;
@@ -166,6 +169,7 @@ body {
 }
 
 .header .nav__links__item .link.sign-in:hover {
+  text-decoration: none;
   background-color: #CD6326;
 }
 
@@ -304,16 +308,22 @@ body {
 
 .main .latest-articles__inner__content .slider .btn-left {
   margin-right: 3.2rem;
+  width: 3rem;
+  height: 3.7rem;
+  background-image: url("../../assets/images/latest-articles/btn_left.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .main .latest-articles__inner__content .slider .btn-left:hover {
   cursor: pointer;
-}
-
-.main .latest-articles__inner__content .slider .btn-left:hover svg path {
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  fill: black;
+  background-image: url("../../assets/images/latest-articles/btn_left_hover.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .main .latest-articles__inner__content .slider .slides {
@@ -383,16 +393,22 @@ body {
 
 .main .latest-articles__inner__content .slider .btn-right {
   margin-left: 3rem;
+  width: 3rem;
+  height: 3.7rem;
+  background-image: url("../../assets/images/latest-articles/btn_right.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .main .latest-articles__inner__content .slider .btn-right:hover {
   cursor: pointer;
-}
-
-.main .latest-articles__inner__content .slider .btn-right:hover svg path {
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  fill: black;
+  background-image: url("../../assets/images/latest-articles/btn_right_hover.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .main .get-notified {
@@ -447,8 +463,10 @@ body {
   font-size: 2.3rem;
   line-height: 2.7rem;
   outline: none;
-  border: none;
+  border: 0.01rem solid #666666;
+  border-right: 0;
   color: #666666;
+  background-color: #cccccc;
 }
 
 .main .get-notified__inner__content .form .btn-send {
@@ -465,6 +483,7 @@ body {
 }
 
 .main .get-notified__inner__content .form .btn-send:hover {
+  cursor: pointer;
   background-color: #E39128;
   border: 0.1rem solid #E39128;
   -webkit-transition: 0.1s;
@@ -573,10 +592,15 @@ body {
   margin-left: 8.9rem;
 }
 
-.footer__inner__content .footer__nav__list__item {
+.footer__inner__content .footer__nav__list__item__link {
   color: #F7F7F7;
   font-size: 2.3rem;
   line-height: 6rem;
+  text-decoration: none;
+}
+
+.footer__inner__content .footer__nav__list__item__link:hover {
+  text-decoration: underline;
 }
 
 .footer__inner__content .footer__nav__list_icons {
@@ -612,28 +636,40 @@ body {
   margin-left: 2.7rem;
 }
 
-.footer__inner__content .footer__nav__list_icons__facebook {
+.footer__inner__content .footer__nav__list_icons__facebook__link {
+  display: block;
+  width: 4rem;
+  height: 4rem;
   background-image: url("../../assets/images/footer/facebook.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.footer__inner__content .footer__nav__list_icons__insta {
+.footer__inner__content .footer__nav__list_icons__insta__link {
+  display: block;
+  width: 4rem;
+  height: 4rem;
   background-image: url("../../assets/images/footer/instagram.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.footer__inner__content .footer__nav__list_icons__pinterest {
+.footer__inner__content .footer__nav__list_icons__pinterest__link {
+  display: block;
+  width: 4rem;
+  height: 4rem;
   background-image: url("../../assets/images/footer/pinterest.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.footer__inner__content .footer__nav__list_icons__twitter {
+.footer__inner__content .footer__nav__list_icons__twitter__link {
+  display: block;
+  width: 4rem;
+  height: 4rem;
   background-image: url("../../assets/images/footer/twitter.svg");
   background-repeat: no-repeat;
   background-position: center;

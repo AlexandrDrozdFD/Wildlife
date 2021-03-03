@@ -80,15 +80,16 @@
           width: 100%;
           .btn-left {
             margin-right: 3.2rem;
+            width: 3rem;
+            height: 3.7rem;
+            background-image: url('../../assets/images/latest-articles/btn_left.svg');
+            @include bg_image_props;
           }
           .btn-left:hover {
             cursor: pointer;
-            svg {
-              path {
-                transition: 0.5s;
-                fill: black;
-              }
-            }
+            transition: 0.5s;
+            background-image: url('../../assets/images/latest-articles/btn_left_hover.svg');
+            @include bg_image_props;
           }
           .slides {
             @include df_row_sb;
@@ -126,15 +127,16 @@
           }
           .btn-right {
             margin-left: 3rem;
+            width: 3rem;
+            height: 3.7rem;
+            background-image: url('../../assets/images/latest-articles/btn_right.svg');
+            @include bg_image_props;
           }
           .btn-right:hover {
             cursor: pointer;
-            svg {
-              path {
-                transition: 0.5s;
-                fill: black;
-              }
-            }
+            transition: 0.5s;
+            background-image: url('../../assets/images/latest-articles/btn_right_hover.svg');
+            @include bg_image_props;
           }
         }
       }
@@ -169,8 +171,10 @@
             font-size:2.3rem;
             line-height: 2.7rem;
             outline: none;
-            border: none;
+            border: 0.01rem solid $font-grey;
+            border-right: 0;
             color: $font-grey;
+            background-color: #cccccc;
           }
           .btn-send {
             padding: 1.6rem 3.4rem;
@@ -185,6 +189,7 @@
             color: $font-light;
           }
           .btn-send:hover {
+            cursor: pointer;
             background-color: $orange-light;
             border: 0.1rem solid $orange-light;
             transition: 0.1s;

@@ -35,9 +35,15 @@
             margin-left: 8.9rem;
           }
           &__item {
-            color: $font-light;
-            font-size: 2.3rem;
-            line-height: 6rem;
+            &__link {
+              color: $font-light;
+              font-size: 2.3rem;
+              line-height: 6rem;
+              text-decoration: none;
+            }
+            &__link:hover {
+              text-decoration: underline;
+            }
           }
         }
         &__list_icons {
@@ -56,20 +62,32 @@
             margin-left: 2.7rem;
           }
           &__facebook {
-            background-image: url('../../assets/images/footer/facebook.svg');
-            @include bg_image_props;
+            &__link {
+              @include social-icons;
+              background-image: url('../../assets/images/footer/facebook.svg');
+              @include bg_image_props;
+            }
           }
           &__insta {
-            background-image: url('../../assets/images/footer/instagram.svg');
-            @include bg_image_props;
+            &__link {
+              @include social-icons;
+              background-image: url('../../assets/images/footer/instagram.svg');
+              @include bg_image_props;
+            }
           }
           &__pinterest {
-            background-image: url('../../assets/images/footer/pinterest.svg');
-            @include bg_image_props;
+            &__link {
+              @include social-icons;
+              background-image: url('../../assets/images/footer/pinterest.svg');
+              @include bg_image_props;
+            }
           }
           &__twitter {
-            background-image: url('../../assets/images/footer/twitter.svg');
-            @include bg_image_props;
+            &__link {
+              @include social-icons;
+              background-image: url('../../assets/images/footer/twitter.svg');
+              @include bg_image_props;
+            }
           }
         }
       }

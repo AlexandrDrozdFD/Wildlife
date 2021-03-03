@@ -61,3 +61,8 @@
   background-position: center;
   background-size: cover;
 }
+@mixin social-icons {
+  display: block;
+  width: 4rem;
+  height: 4rem;
+}
