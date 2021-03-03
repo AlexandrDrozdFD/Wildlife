@@ -1,7 +1,8 @@
 **Wildlife**
 
 1. Task link: https://rolling-scopes-school.github.io/stage0/#/tasks/wildlife
-2. Screenshot wildlife task
+2. Screenshot wildlife task:
+![](assets/images/screeshot.PNG)
 3. Link of deploy (netlify/gh-pages) according docs.rs.school
 4. Deadline: 15.03.2021
 5. **score** *(self-test)*
