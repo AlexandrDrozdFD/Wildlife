@@ -314,12 +314,12 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
 .main .latest-articles__inner__content .slider .btn-left:hover {
   cursor: pointer;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
   background-image: url("../../assets/images/latest-articles/btn_left_hover.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -399,12 +399,12 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
 .main .latest-articles__inner__content .slider .btn-right:hover {
   cursor: pointer;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
   background-image: url("../../assets/images/latest-articles/btn_right_hover.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -638,11 +638,11 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  -webkit-transition: all .2s;
+  transition: all .2s;
 }
 
 .footer__inner__content .footer__nav__list_icons__facebook__link:hover {
-  -webkit-transition: .2s;
-  transition: .2s;
   background-image: url("../../assets/images/footer/facebook_hover.svg");
 }
 
@@ -654,11 +654,11 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  -webkit-transition: all .2s;
+  transition: all .2s;
 }
 
 .footer__inner__content .footer__nav__list_icons__insta__link:hover {
-  -webkit-transition: .2s;
-  transition: .2s;
   background-image: url("../../assets/images/footer/instagram_hover.svg");
 }
 
@@ -670,11 +670,11 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  -webkit-transition: all .2s;
+  transition: all .2s;
 }
 
 .footer__inner__content .footer__nav__list_icons__pinterest__link:hover {
-  -webkit-transition: .2s;
-  transition: .2s;
   background-image: url("../../assets/images/footer/pinterest_hover.svg");
 }
 
@@ -687,11 +687,11 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  -webkit-transition: all .2s;
+  transition: all .2s;
 }
 
 .footer__inner__content .footer__nav__list_icons__youtube__link:hover {
-  -webkit-transition: .2s;
-  transition: .2s;
   background-image: url("../../assets/images/footer/youtube_hover.svg");
 }
 /*# sourceMappingURL=main.css.map */

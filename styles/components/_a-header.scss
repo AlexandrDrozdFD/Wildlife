@@ -12,7 +12,7 @@
       margin-right: 1.5rem;
       width: 7rem;
       height: 6rem;
-      background-image: url('../../assets/images/header/horns.svg');
+      background-image: url("../../assets/images/header/horns.svg");
       @include bg_image_props;
     }
     &__text {

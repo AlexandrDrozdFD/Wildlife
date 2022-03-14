@@ -62,8 +62,8 @@
               @include social-icons;
               background-image: url('../../assets/images/footer/facebook.svg');
               @include bg_image_props;
+              transition: all .2s;
               &:hover {
-                transition: .2s;
                 background-image: url('../../assets/images/footer/facebook_hover.svg');
               }
             }
@@ -73,8 +73,8 @@
               @include social-icons;
               background-image: url('../../assets/images/footer/instagram.svg');
               @include bg_image_props;
+              transition: all .2s;
               &:hover {
-                transition: .2s;
                 background-image: url('../../assets/images/footer/instagram_hover.svg');
               }
             }
@@ -84,8 +84,8 @@
               @include social-icons;
               background-image: url('../../assets/images/footer/pinterest.svg');
               @include bg_image_props;
+              transition: all .2s;
               &:hover {
-                transition: .2s;
                 background-image: url('../../assets/images/footer/pinterest_hover.svg');
               }
             }
@@ -96,8 +96,8 @@
               width: 6rem;
               background-image: url('../../assets/images/footer/youtube.svg');
               @include bg_image_props;
+              transition: all .2s;
               &:hover {
-                transition: .2s;
                 background-image: url('../../assets/images/footer/youtube_hover.svg');
               }
             }

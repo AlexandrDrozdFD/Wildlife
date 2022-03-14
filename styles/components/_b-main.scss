@@ -84,10 +84,10 @@
             height: 3.7rem;
             background-image: url('../../assets/images/latest-articles/btn_left.svg');
             @include bg_image_props;
+            transition: all .5s;
           }
           .btn-left:hover {
             cursor: pointer;
-            transition: 0.5s;
             background-image: url('../../assets/images/latest-articles/btn_left_hover.svg');
             @include bg_image_props;
           }
@@ -131,10 +131,10 @@
             height: 3.7rem;
             background-image: url('../../assets/images/latest-articles/btn_right.svg');
             @include bg_image_props;
+            transition: all .5s;
           }
           .btn-right:hover {
             cursor: pointer;
-            transition: 0.5s;
             background-image: url('../../assets/images/latest-articles/btn_right_hover.svg');
             @include bg_image_props;
           }
